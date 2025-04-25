@@ -2,11 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    numbers = {
-        'num': -10
-
-    }
-    return render(request, 'index.html', numbers)
+    return render(request, 'index.html')
 
 def about(request):
     return render(request, 'about.html')
